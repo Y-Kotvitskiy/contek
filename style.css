@@ -1,0 +1,96 @@
+html, body, figure {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  height: 100dvh;
+  box-sizing: border-box;
+  border: solid 1px black;
+  max-width:100%; 
+}
+
+.header {
+  display: flex;
+  padding: 0.5rem 3rem;
+  justify-content: space-between;
+  border: solid 1px red;
+}
+
+.header h1 {
+  display: flex;
+  width: 20rem;
+  justify-content: center;
+}
+
+.header .address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0.4rem 2rem;
+  width: 10rem;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px red;
+  flex-grow: 1;
+}
+
+.service {
+  display: flex;
+  border: solid 1px green;
+  flex: 1 1 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.service.phone {
+    order: 1;
+}
+
+
+.service.video {
+  order: 1;
+}
+
+.service.computers {
+  order: 1;
+}
+
+/* Medium devices (tablets, 768px and up) 
+@media (min-width: 1200px) {   
+ */
+@media (min-width: 1200px) {
+
+    .service.phone {
+        order: 0;
+    }
+      
+  .services {
+    flex-direction: row;
+  }
+}
+
+@media (pointer: coarse) {
+    .wrapper {
+        margin: 0.2rem;
+    }
+      
+  @media (orientation: landscape) {
+
+    .service.phone {
+        order: 0;
+    }
+
+
+    .services {
+      flex-direction: row;
+    }
+  }
+}
