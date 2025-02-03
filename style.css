@@ -75,12 +75,17 @@ figure {
   .services {
     flex-direction: row;
   }
+
 }
 
 @media (pointer: coarse) {
   .wrapper {
     margin: 0.2rem;
     padding: 0;
+  }
+
+  .services {
+    position: relative;
   }
 
   .service {

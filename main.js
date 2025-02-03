@@ -19,7 +19,6 @@ const showService = () => {
     }
 
     )
-    //console.log(serviceInex)
 }
 
-//setInterval(showService, 3000)
+setInterval(showService, 3000)
