@@ -1,0 +1,42 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border: 1px solid red;
+    position: relative;
+    width: 400px;
+    height: 600px;
+}
+
+.service {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    animation: service-show 12s infinite;
+}
+
+.service.video {
+    opacity: 0;
+}
+
+.service.phone {
+    opacity: 0;
+    animation-delay: 4s;
+}
+
+.service.computers {
+    opacity: 0;
+    animation-delay: 8s;
+}
+
+
+@keyframes service-show {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
