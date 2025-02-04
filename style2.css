@@ -14,7 +14,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    animation: service-show 12s infinite;
+    animation: service-show 18s infinite;
 }
 
 .service.video {
@@ -23,20 +23,18 @@
 
 .service.phone {
     opacity: 0;
-    animation-delay: 4s;
+    animation-delay: 6s;
 }
 
 .service.computers {
     opacity: 0;
-    animation-delay: 8s;
+    animation-delay: 12s;
 }
 
 
 @keyframes service-show {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
+    3% {  opacity: 1; }
+    30% {  opacity: 1; }
+    36% {  opacity: 0; }
+    97% {  opacity: 0; }
 }

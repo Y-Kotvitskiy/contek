@@ -10,6 +10,7 @@ let serviceInex = 0;
 const lastServiceNumber = services.length - 1;
 
 const showService = () => {
+  return
   serviceInex = serviceInex === lastServiceNumber ? 0 : serviceInex + 1;
   services.forEach((currentService, currentIndex) => {
     if (currentIndex === serviceInex) currentService.style.opacity = 1;
